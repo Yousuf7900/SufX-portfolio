@@ -1,2 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
+
+.uncial-antiqua-regular {
+    font-family: "Uncial Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+}
