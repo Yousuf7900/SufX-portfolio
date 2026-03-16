@@ -9,6 +9,9 @@ import CheckOutMyPortfolio from "../components/CheckOutMyPortfolio";
 import WorkExperienceTimeline from "../components/WorkExperience";
 import Stats from "../components/Stats";
 import Contact from "../components/Contact";
+import Education from "../components/Education";
+import Techs from "../components/Techs";
+import ScrollToTop from "../components/ScrollUp";
 
 const MainLayout = () => {
     return (
@@ -30,6 +33,12 @@ const MainLayout = () => {
                 <MyAbout></MyAbout>
             </section>
             <section>
+                <Education></Education>
+            </section>
+            <section>
+                <Techs></Techs>
+            </section>
+            <section>
                 <WhatGoodAt></WhatGoodAt>
             </section>
             <section>
@@ -43,6 +52,9 @@ const MainLayout = () => {
             </section>
             <section>
                 <Contact></Contact>
+            </section>
+            <section>
+                <ScrollToTop></ScrollToTop>
             </section>
 
             <main>
