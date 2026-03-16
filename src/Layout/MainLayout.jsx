@@ -7,6 +7,8 @@ import MyAbout from "../components/MyAbout";
 import WhatGoodAt from "../components/WhatGoodAt";
 import CheckOutMyPortfolio from "../components/CheckOutMyPortfolio";
 import WorkExperienceTimeline from "../components/WorkExperience";
+import Stats from "../components/Stats";
+import Contact from "../components/Contact";
 
 const MainLayout = () => {
     return (
@@ -35,6 +37,12 @@ const MainLayout = () => {
             </section>
             <section id="work">
                 <WorkExperienceTimeline></WorkExperienceTimeline>
+            </section>
+            <section>
+                <Stats></Stats>
+            </section>
+            <section>
+                <Contact></Contact>
             </section>
 
             <main>
