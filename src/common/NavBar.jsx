@@ -1,22 +1,21 @@
 import { IoMenu } from "react-icons/io5";
-import { NavLink } from "react-router";
 
 const NavBar = () => {
-
-    const navLinkStyle = ({ isActive }) =>
-        `relative font-medium transition-all duration-300 
-        ${isActive ? "text-blue-400" : "text-white hover:text-blue-400"}`;
+    const scrollToSection = (id) => {
+        const section = document.getElementById(id);
+        section?.scrollIntoView({ behavior: "smooth" });
+    }
 
     const commonLinks = (
         <>
-            <li><NavLink to="/about" className={navLinkStyle}>About</NavLink></li>
-            <li><NavLink to="/skills" className={navLinkStyle}>Services</NavLink></li>
-            <li><NavLink to="/services" className={navLinkStyle}>Portfolio</NavLink></li>
-            <li><NavLink to="/projects" className={navLinkStyle}>Clients</NavLink></li>
-            <li><NavLink to="/work" className={navLinkStyle}>Work</NavLink></li>
-            <li><NavLink to="/stats" className={navLinkStyle}>Statistics</NavLink></li>
-            <li><NavLink to="/blog" className={navLinkStyle}>Blog</NavLink></li>
-            <li><NavLink to="/contact" className={navLinkStyle}>Contact</NavLink></li>
+            <li><button onClick={() => scrollToSection("about")}>About</button></li>
+            <li><button onClick={() => scrollToSection("services")}>Services</button></li>
+            <li><button onClick={() => scrollToSection("portfolio")}>Portfolio</button></li>
+            <li><button onClick={() => scrollToSection("clients")}>Clients</button></li>
+            <li><button onClick={() => scrollToSection("work")}>Work</button></li>
+            <li><button onClick={() => scrollToSection("stats")}>Statistics</button></li>
+            <li><button onClick={() => scrollToSection("blog")}>Blog</button></li>
+            <li><button onClick={() => scrollToSection("contact")}>Contact</button></li>
         </>
     );
 

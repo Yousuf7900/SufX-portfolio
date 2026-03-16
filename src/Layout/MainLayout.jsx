@@ -3,6 +3,7 @@ import NavBar from "../common/NavBar";
 import Footer from "../common/Footer";
 import Banner from "../components/Banner";
 import background_img from "../assets/background-img.jpg";
+import MyAbout from "../components/MyAbout";
 
 const MainLayout = () => {
     return (
@@ -20,6 +21,9 @@ const MainLayout = () => {
                     <Banner />
                 </div>
             </div>
+            <section id="about">
+                <MyAbout></MyAbout>
+            </section>
 
             <main>
                 <Outlet />

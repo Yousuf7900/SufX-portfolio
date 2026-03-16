@@ -2,6 +2,10 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html {
+    scroll-behavior: smooth;
+}
+
 .uncial-antiqua-regular {
     font-family: "Uncial Antiqua", serif;
     font-weight: 400;
