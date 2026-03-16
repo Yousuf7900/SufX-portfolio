@@ -6,6 +6,7 @@ import background_img from "../assets/background-img.jpg";
 import MyAbout from "../components/MyAbout";
 import WhatGoodAt from "../components/WhatGoodAt";
 import CheckOutMyPortfolio from "../components/CheckOutMyPortfolio";
+import WorkExperienceTimeline from "../components/WorkExperience";
 
 const MainLayout = () => {
     return (
@@ -31,6 +32,9 @@ const MainLayout = () => {
             </section>
             <section>
                 <CheckOutMyPortfolio></CheckOutMyPortfolio>
+            </section>
+            <section id="work">
+                <WorkExperienceTimeline></WorkExperienceTimeline>
             </section>
 
             <main>

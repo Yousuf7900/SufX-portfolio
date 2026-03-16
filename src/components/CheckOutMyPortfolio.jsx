@@ -1,31 +1,33 @@
-import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import Niyor_IMG from '../assets/Projects/niyor.png';
+import dropify from '../assets/Projects/dropify.png';
+import ls from '../assets/Projects/ls.png'; // optional static image
+import lb from '../assets/Projects/lb.png'; // optional static image
 
-// Example project data
 const projects = [
     {
-        title: "Portfolio Website",
-        img: "https://via.placeholder.com/400x250.png?text=Portfolio+Website",
-        github: "#",
-        live: "#"
+        title: "Niyor E-commerce App",
+        img: Niyor_IMG,
+        github: "https://github.com/Yousuf7900?tab=repositories",
+        live: "https://niyor.web.app/"
     },
     {
-        title: "E-commerce App",
-        img: "https://via.placeholder.com/400x250.png?text=E-commerce+App",
-        github: "#",
-        live: "#"
+        title: "Dropify Digital Product App",
+        img: dropify,
+        github: "https://github.com/Yousuf7900?tab=repositories",
+        live: "https://dropify-shop.web.app/"
     },
     {
-        title: "Blog Platform",
-        img: "https://via.placeholder.com/400x250.png?text=Blog+Platform",
-        github: "#",
-        live: "#"
+        title: "Lingo-Bingo",
+        img: lb,
+        github: "https://github.com/Yousuf7900?tab=repositories",
+        live: "https://lingo-bingo-e3d4e.web.app/"
     },
     {
-        title: "Task Manager",
-        img: "https://via.placeholder.com/400x250.png?text=Task+Manager",
-        github: "#",
-        live: "#"
+        title: "LearnSphere",
+        img: ls,
+        github: "https://github.com/Yousuf7900?tab=repositories",
+        live: "https://learnsphere-study.web.app/"
     }
 ];
 
@@ -45,13 +47,19 @@ const CheckOutMyPortfolio = () => {
                 {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
+                        className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 flex flex-col"
                     >
-                        <img
-                            src={project.img}
-                            alt={project.title}
-                            className="w-full h-56 object-cover"
-                        />
+                        {/* Static Front Page Preview */}
+                        <div className="relative w-full h-56">
+                            <img
+                                src={project.img}
+                                alt={project.title}
+                                className="w-full h-full object-cover rounded-t-2xl"
+                            />
+                            {/* Optional overlay effect */}
+                            <div className="absolute inset-0 bg-black/10 rounded-t-2xl opacity-0 hover:opacity-10 transition duration-300"></div>
+                        </div>
+
                         <div className="p-6 flex flex-col gap-4">
                             <h3 className="text-xl font-semibold text-gray-800">{project.title}</h3>
                             <div className="flex gap-4">
