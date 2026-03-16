@@ -4,6 +4,8 @@ import Footer from "../common/Footer";
 import Banner from "../components/Banner";
 import background_img from "../assets/background-img.jpg";
 import MyAbout from "../components/MyAbout";
+import WhatGoodAt from "../components/WhatGoodAt";
+import CheckOutMyPortfolio from "../components/CheckOutMyPortfolio";
 
 const MainLayout = () => {
     return (
@@ -23,6 +25,12 @@ const MainLayout = () => {
             </div>
             <section id="about">
                 <MyAbout></MyAbout>
+            </section>
+            <section>
+                <WhatGoodAt></WhatGoodAt>
+            </section>
+            <section>
+                <CheckOutMyPortfolio></CheckOutMyPortfolio>
             </section>
 
             <main>
